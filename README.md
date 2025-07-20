@@ -27,6 +27,15 @@ TECHDESIGNSOLUTIONS/
 ├── node_modules/
 ├── src/
 │   ├── img/
+│   │   ├── CapacitacionYformacion.jpg
+│   │   ├── ConsultoriaTecnologica.jpgabstracts
+│   │   ├── DesarrollodeSoftware.jpg
+│   │   ├── design.jpg
+│   │   ├── DiseñoWeb.jpg
+│   │   ├── MarketingDigital.jpg
+│   │   ├── prototipos.jpg
+│   │   ├── SoporteTecnico.jpg
+│   │   └── tablet.jpg
 │   └── scss/
 │       ├── abstracts/
 │       │   ├── _mixins.scss
@@ -42,8 +51,6 @@ TECHDESIGNSOLUTIONS/
 │       │   └── _index.scss
 │       ├── themes/
 │       │   └── _default.scss
-│       ├── vendors/
-│       │   └── _bootstrap.scss
 │       └── main.scss
 ├── .gitignore
 ├── index.html
