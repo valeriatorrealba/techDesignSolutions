@@ -5,6 +5,41 @@
   padding: 0;
 }
 
+.btn {
+  background-color: #0A2E55;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+.btn-subir {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0d3b6d;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-subir:hover {
+  background-color: #06335c;
+}
+
 .header {
   padding: 2rem 2rem;
 }
@@ -78,29 +113,6 @@
   margin-top: 10px;
   font-size: 14px;
   color: #ffffff;
-}
-
-.btn-subir {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #0d3b6d;
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 1.5rem;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-subir:hover {
-  background-color: #06335c;
 }
 
 .bienvenida {

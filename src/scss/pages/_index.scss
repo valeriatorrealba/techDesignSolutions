@@ -1,6 +1,7 @@
 @use '../abstracts/_variables' as *;
 @use '../abstracts/mixins' as *;
 
+
 .bienvenida {
     @include flex-center(row, space-between, center, 2rem);
     padding: 3rem 2rem;

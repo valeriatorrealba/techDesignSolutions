@@ -33,7 +33,7 @@ TECHDESIGNSOLUTIONS/
 │       │   └── _variables.scss
 │       ├── base/
 │       │   └── _normalize.scss
-│       ├── components/      ← Elementos reutilizables
+│       ├── components/
 │       │   └── _buttons.scss
 │       ├── layout/
 │       │   ├── _footer.scss
