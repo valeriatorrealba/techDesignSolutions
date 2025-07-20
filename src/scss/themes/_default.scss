@@ -1,0 +1,13 @@
+@use '../abstracts/_variables' as *;
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFF3E0;
+    color: $text-color-gris;
+    font-family: 'Segoe UI', sans-serif;
+}

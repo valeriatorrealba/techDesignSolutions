@@ -1,0 +1,32 @@
+@use '../abstracts/_variables' as *;
+@use '../abstracts/mixins' as *;
+
+.header {
+    @include header-padding;
+}
+
+.navbar {
+    background-color: $primary-color;
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: $text-color;
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+
+        .nav-link {
+        color: $text-color;
+        font-weight: 600;
+
+        &:hover {
+            color: rgb(189, 171, 9);
+        }
+        }
+    }
+}

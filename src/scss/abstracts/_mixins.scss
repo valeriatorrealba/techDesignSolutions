@@ -1,64 +1,43 @@
-@use '../abstracts/variables' as *;
-// Mixins Responsivos
-
-// Tablet y móviles grandes (≤ 768px)
-@mixin responsive-md {
-    .menu-icon {
-    display: block;
-    font-size: 1.75rem;
-    cursor: pointer;
-    color: $text-color-green;
-    padding: 0.5rem 1rem;
-    align-self: flex-end;
-    }
-
-    .header__nav {
-    width: 100%;
-    }
-
-    .nav__list {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: $primary-color;
-    padding: 1rem 2rem;
-    border-top: 1px solid #ccc;
-    }
-
-    #menu-toggle:checked + .menu-icon + .header__nav .nav__list {
+@mixin flex-center($direction: row, $justify: center, $align: center, $gap: 0) {
     display: flex;
-    }
-
-    .main__section {
-    padding: 1.25rem;
-    }
-
-    .main__title,
-    .contact__title {
-    font-size: 1.5rem;
-    }
-
-    .contact__form {
-    padding: 0 1rem;
-    }
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
 }
 
-// Móviles pequeños (≤ 480px)
-@mixin responsive-sm {
-    .header__name {
-    font-size: 1.25rem;
-    }
+@mixin text-limit($max-height: 200px) {
+    flex-grow: 1;
+    max-height: $max-height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    .nav__list {
-    align-items: flex-start;
-    }
+@mixin img-cover($height: 250px, $radius: 8px) {
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+    object-position: center;
+    border-radius: $radius;
+}
 
-    .main__title {
-    font-size: 1.25rem;
-    }
+@mixin form-control($padding: 10px, $border-color: #ccc, $radius: 4px) {
+    padding: $padding;
+    margin-top: 5px;
+    border: 1px solid $border-color;
+    border-radius: $radius;
+}
+@mixin grid-responsive($columns: 3, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+@mixin container-center($max-width: 1200px, $padding: 0 20px) {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $padding;
+}
 
-    .footer__social-list {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
+@mixin header-padding($padding-y: 2rem, $padding-x: 2rem) {
+    padding: $padding-y $padding-x;
 }
